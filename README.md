@@ -48,101 +48,54 @@
 
 </br>
 
-<table width="100%">
-<tr>
-  <td><h3 align="center">⚡ SKILLS</h3></td>
-  <td><h3 align="center">📊 STATS</h3></td>
-</tr>
-<tr>
-  <td width="55%">
-
-#### Languages
-![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white)&nbsp;
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)&nbsp;
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)&nbsp;
-![Python](https://img.shields.io/badge/Python-05122A?style=flat&logo=python)&nbsp;
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)&nbsp;
-
----
-#### Frontend & Backend
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)&nbsp;
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)&nbsp;
-
----
-#### Ecommerce & CMS
-![Shopify](https://img.shields.io/badge/Shopify-96BF48?style=flat&logo=shopify&logoColor=white)&nbsp;
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white)&nbsp;
-
----
-#### UI/UX Design
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)&nbsp;
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=flat&logo=Adobe%20XD&logoColor=#FF61F6)&nbsp;
-![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=adobe%20photoshop&logoColor=white)&nbsp;
-
----
-#### Databases
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white)&nbsp;
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)&nbsp;
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)&nbsp;
-
----
-#### Analytics & Tools
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)&nbsp;
-![Git](https://img.shields.io/badge/Git-05122A?style=flat&logo=git)&nbsp;
-![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)&nbsp;
-![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white)&nbsp;
-![N8N](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)&nbsp;
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)&nbsp;
-
-  </td>
-  <td>
-
-<p align="center">
-  <img height="50%" width="auto" src="https://github-readme-stats.vercel.app/api?username=nicobcra&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
-  </br></br>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=nicobcra&theme=darcula&hide_border=true&background=FFFFFF00">
-  </br></br>
-  <img height="50%" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicobcra&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=8">
-</p>
-
-  </td>
-
-  <td width="50%" valign="top">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50%" valign="top">
       <h3 align="left">⚡ Tech Stack & Skills</h3>
       <br>
       <p align="left">
         <strong>🌐 Languages</strong><br>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,js,python,java&perline=5" /></a>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,js,python,java" alt="Languages" /></a>
       </p>
       <br>
       <p align="left">
         <strong>🚀 Frontend & Backend</strong><br>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nodejs" /></a>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nodejs" alt="Frontend & Backend" /></a>
       </p>
       <br>
       <p align="left">
         <strong>🛒 Ecommerce & CMS</strong><br>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=shopify,wordpress" /></a>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=shopify,wordpress" alt="Ecommerce" /></a>
       </p>
       <br>
       <p align="left">
         <strong>🎨 UI/UX Design</strong><br>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=figma,xd,ps" /></a>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=figma,xd,ps" alt="UI/UX" /></a>
       </p>
       <br>
       <p align="left">
         <strong>🗄️ Databases</strong><br>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb" /></a>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb" alt="Databases" /></a>
       </p>
       <br>
       <p align="left">
         <strong>📊 Analytics & Automation</strong><br>
-        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=powerbi,git,notion,docker,arduino" /></a>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=powerbi,git,notion,docker,arduino" alt="Tools" /></a>
       </p>
     </td>
-</tr>
+    
+    <td width="50%" valign="top" align="center">
+      <h3 align="center">📊 GitHub Analytics</h3>
+      <br>
+      <img width="95%" src="https://github-readme-stats.vercel.app/api?username=nicobcra&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000" alt="GitHub Stats">
+      <br><br>
+      <img width="95%" src="https://github-readme-streak-stats.herokuapp.com?user=nicobcra&theme=darcula&hide_border=true&background=FFFFFF00" alt="GitHub Streak">
+      <br><br>
+      <img width="95%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicobcra&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=8" alt="Top Languages">
+    </td>
+  </tr>
 </table>
-
+<br>
 <br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
