@@ -50,7 +50,7 @@
 </picture>
 
 <br>
-<hr style="border: 0; height: 1px; background: #30363d; margin: 0;">
+<hr style="border: 0; height: 1px; background: #1b223c; margin: 0;">
 <br>
 
 <table width="100%">
@@ -114,7 +114,9 @@
 </tr>
 </table>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<br>
+<hr style="border: 0; height: 1px; background: #1b223c; margin: 0;">
+<br>
 
 <div align="center">
   <br>
