@@ -111,6 +111,40 @@
 
 <br>
 
+<td width="50%" valign="top">
+      <h3 align="left">⚡ Tech Stack & Skills</h3>
+      <br>
+      <p align="left">
+        <strong>🌐 Languages</strong><br>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,js,python,java&perline=5" /></a>
+      </p>
+      <br>
+      <p align="left">
+        <strong>🚀 Frontend & Backend</strong><br>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nodejs" /></a>
+      </p>
+      <br>
+      <p align="left">
+        <strong>🛒 Ecommerce & CMS</strong><br>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=shopify,wordpress" /></a>
+      </p>
+      <br>
+      <p align="left">
+        <strong>🎨 UI/UX Design</strong><br>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=figma,xd,ps" /></a>
+      </p>
+      <br>
+      <p align="left">
+        <strong>🗄️ Databases</strong><br>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb" /></a>
+      </p>
+      <br>
+      <p align="left">
+        <strong>📊 Analytics & Automation</strong><br>
+        <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=powerbi,git,notion,docker,arduino" /></a>
+      </p>
+    </td>
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 
 <div align="center">
