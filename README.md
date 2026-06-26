@@ -27,10 +27,6 @@
 
 ```css
 > root :~ whoami
-
-
-```css
-> root :~ whoami
 ```
 ```python
 > Junior Web Developer focused on Ecommerce 💻
