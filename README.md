@@ -19,9 +19,14 @@
   <img src="https://komarev.com/ghpvc/?username=nicobcra&style=flat-square&color=blue" alt="Profile Views"/>
 </div>
 
-<hr style="border: 0; height: 1px; background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(34, 235, 247, 0.5), rgba(0, 0, 0, 0)); margin: 20px 0;">
+<br>
+<hr style="border: 0; height: 1px; background: #1b223c; margin: 0;">
+<br>
 
 <img align="left" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3VlaHlmdmJndG56bjd4NDluZTNoMDZ6bDJoamQ2Y3VjM3YwOWtzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iIqmM5tTjmpOB9mpbn/giphy.gif" width="410" height="270" />
+
+```css
+> root :~ whoami
 
 
 ```css
