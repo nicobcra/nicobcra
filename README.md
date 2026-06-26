@@ -62,42 +62,42 @@
   <td width="55%">
 
 #### Languages
-![HTML5](https://img.shields.io/badge/HTML5-1b223c?style=flat&logo=html5&logoColor=white)&nbsp;
-![CSS3](https://img.shields.io/badge/CSS3-1b223c?style=flat&logo=css3&logoColor=white)&nbsp;
-![JavaScript](https://img.shields.io/badge/JavaScript-1b223c?style=flat&logo=javascript&logoColor=white)&nbsp;
-![Python](https://img.shields.io/badge/Python-1b223c?style=flat&logo=python&logoColor=white)&nbsp;
-![Java](https://img.shields.io/badge/Java-1b223c?style=flat&logo=openjdk&logoColor=white)&nbsp;
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)&nbsp;
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)&nbsp;
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)&nbsp;
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)&nbsp;
 
 ---
 #### Frontend & Backend
-![React](https://img.shields.io/badge/React-1b223c?style=flat&logo=react&logoColor=white)&nbsp;
-![Node.js](https://img.shields.io/badge/Node.js-1b223c?style=flat&logo=nodedotjs&logoColor=white)&nbsp;
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)&nbsp;
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)&nbsp;
 
 ---
 #### Ecommerce & CMS
-![Shopify](https://img.shields.io/badge/Shopify-1b223c?style=flat&logo=shopify&logoColor=white)&nbsp;
-![WordPress](https://img.shields.io/badge/WordPress-1b223c?style=flat&logo=wordpress&logoColor=white)&nbsp;
+![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=flat&logo=shopify&logoColor=white)&nbsp;
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white)&nbsp;
 
 ---
 #### UI/UX Design
-![Figma](https://img.shields.io/badge/Figma-1b223c?style=flat&logo=figma&logoColor=white)&nbsp;
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-1b223c?style=flat&logo=adobexd&logoColor=white)&nbsp;
-![Photoshop](https://img.shields.io/badge/Photoshop-1b223c?style=flat&logo=adobephotoshop&logoColor=white)&nbsp;
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)&nbsp;
+![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=flat&logo=adobexd&logoColor=FF61F6)&nbsp;
+![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=adobephotoshop&logoColor=white)&nbsp;
 
 ---
 #### Databases
-![MySQL](https://img.shields.io/badge/MySQL-1b223c?style=flat&logo=mysql&logoColor=white)&nbsp;
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1b223c?style=flat&logo=postgresql&logoColor=white)&nbsp;
-![MongoDB](https://img.shields.io/badge/MongoDB-1b223c?style=flat&logo=mongodb&logoColor=white)&nbsp;
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)&nbsp;
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)&nbsp;
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)&nbsp;
 
 ---
 #### Analytics & Tools
-![Power BI](https://img.shields.io/badge/Power%20BI-1b223c?style=flat&logo=powerbi&logoColor=white)&nbsp;
-![Git](https://img.shields.io/badge/Git-1b223c?style=flat&logo=git&logoColor=white)&nbsp;
-![Notion](https://img.shields.io/badge/Notion-1b223c?style=flat&logo=notion&logoColor=white)&nbsp;
-![Docker](https://img.shields.io/badge/Docker-1b223c?style=flat&logo=docker&logoColor=white)&nbsp;
-![N8N](https://img.shields.io/badge/n8n-1b223c?style=flat&logo=n8n&logoColor=white)&nbsp;
-![Arduino](https://img.shields.io/badge/Arduino-1b223c?style=flat&logo=arduino&logoColor=white)&nbsp;
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)&nbsp;
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)&nbsp;
+![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)&nbsp;
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)&nbsp;
+![N8N](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)&nbsp;
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)&nbsp;
 
   </td>
   <td>
