@@ -37,7 +37,9 @@
 
 > Bogotá, Colombia 🇨🇴
 ```
-<hr style="border: 0; height: 1px; background: #30363d; margin: 20px 0;">
+<br>
+<hr style="border: 0; height: 1px; background: #30363d; margin: 0;">
+<br>
 
 <h3 align="center">👾 My GitHub Contributions Journey</h3>
 <br>
@@ -48,8 +50,9 @@
   <img alt="Github snake game" src="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake.svg">
 </picture>
 
-<hr style="border: 0; height: 1px; background: #30363d; margin: 20px 0;">
-</br>
+<br>
+<hr style="border: 0; height: 1px; background: #30363d; margin: 0;">
+<br>
 
 <table width="100%">
 <tr>
