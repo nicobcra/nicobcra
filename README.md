@@ -106,12 +106,8 @@
 </p>
 
   </td>
-</tr>
-</table>
 
-<br>
-
-<td width="50%" valign="top">
+  <td width="50%" valign="top">
       <h3 align="left">⚡ Tech Stack & Skills</h3>
       <br>
       <p align="left">
@@ -144,6 +140,10 @@
         <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=powerbi,git,notion,docker,arduino" /></a>
       </p>
     </td>
+</tr>
+</table>
+
+<br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 
