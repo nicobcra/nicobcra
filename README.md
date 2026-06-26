@@ -21,7 +21,14 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake.svg">
+  <img alt="Github snake game" src="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake.svg">
+</picture>
+
 <img align="left" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3VlaHlmdmJndG56bjd4NDluZTNoMDZ6bDJoamQ2Y3VjM3YwOWtzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iIqmM5tTjmpOB9mpbn/giphy.gif" width="410" height="270" />
+
 
 
 ```css
