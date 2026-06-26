@@ -5,21 +5,23 @@
 </p>
 
 <div id="badges" align="center">
-  <a href="mailto:nbecerran73@gmail.com">
-    <img src="https://img.shields.io/badge/-Email%20Me-red?style=for-the-badge" alt="Email Badge"/>
-  </a>
   <a href="https://www.linkedin.com/in/nicolas-felipe-becerra-jimenez-771a83263/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <a href="https://github.com/nicobcra">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
+  <a href="mailto:nbecerran73@gmail.com">
+    <img src="https://img.shields.io/badge/-Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
   </a>
 </div>
-<div id="profile-views" align="center">
-  <img src="https://komarev.com/ghpvc/?username=nicobcra&style=flat-square&color=blue" alt="Profile Views"/>
-</div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=nicobcra&style=flat-square&color=22EBF7" alt="Profile Views"/>
+</p>
+
+---
+
+<table border="0">
+<tr>
+<td width="55%" valign="top">
 
 <img align="left" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3VlaHlmdmJndG56bjd4NDluZTNoMDZ6bDJoamQ2Y3VjM3YwOWtzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iIqmM5tTjmpOB9mpbn/giphy.gif" width="410" height="270" />
 
