@@ -39,7 +39,6 @@
 ```
 <br>
 <hr style="border: 0; height: 1px; background: #30363d; margin: 0;">
-<br>
 
 <h3 align="center">👾 My GitHub Contributions Journey</h3>
 <br>
