@@ -41,7 +41,6 @@
 <hr style="border: 0; height: 1px; background: #30363d; margin: 0;">
 
 <h3 align="center">👾 My GitHub Contributions Journey</h3>
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake-dark.svg">
