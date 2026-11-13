@@ -1,4 +1,5 @@
 """Genera los SVG del perfil (versión oscura y clara). Uso: python scripts/build_assets.py"""
+import base64
 import re
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -105,6 +106,31 @@ def card(t, title, desc, tags, status, w=588, h=190):
             f'fill="{t["muted"]}">{escape(status)}</text></svg>')
 
 
+# Identidad propia de Controla (verdes de la app) para su tarjeta
+CONTROLA = {
+    "dark": dict(card="#12261A", border="#1F4030", text="#E5F6EC", muted="#8FB5A0", acc="#34C26B", chip="#1B3A29", tile="#FFFFFF"),
+    "light": dict(card="#F6FAF4", border="#D7EADD", text="#102A1B", muted="#4E6B5A", acc="#159947", chip="#E5F6EC", tile="#FFFFFF"),
+}
+
+
+def card_controla(name, title, desc, tags, status, w=588, h=190):
+    t = dict(THEMES[name]); t.update(CONTROLA[name])
+    icon = base64.b64encode((Path(__file__).resolve().parent / "brand" / "controla-icon.png").read_bytes()).decode()
+    chip_svg, _ = chips(tags, 28, h - 54, t)
+    lines = "".join(f'<text x="92" y="{92 + i * 22}" font-family="{SANS}" font-size="15" fill="{t["muted"]}">{escape(l)}</text>'
+                    for i, l in enumerate(desc))
+    sw = int(len(status) * 7 + 22)
+    return (head(w, h, t) +
+            f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="20" fill="{t["card"]}" stroke="{t["border"]}"/>'
+            f'<clipPath id="ic"><rect x="28" y="26" width="52" height="52" rx="14"/></clipPath>'
+            f'<rect x="28" y="26" width="52" height="52" rx="14" fill="#FFFFFF" stroke="{t["border"]}"/>'
+            f'<image href="data:image/png;base64,{icon}" x="28" y="26" width="52" height="52" clip-path="url(#ic)"/>'
+            f'<text x="92" y="60" font-family="{SANS}" font-size="22" font-weight="700" fill="{t["text"]}">{escape(title)}</text>'
+            f'{lines}{chip_svg}'
+            f'<rect x="{w - 28 - sw}" y="26" width="{sw}" height="24" rx="12" fill="none" stroke="{t["acc"]}"/>'
+            f'<text x="{w - 28 - sw / 2}" y="42" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{t["acc"]}">{escape(status)}</text></svg>')
+
+
 def wide(t):
     w, h = 1200, 150
     chip_svg, _ = chips(["Webs", "Automatización", "Software a la medida"], 32, 90, t, 13)
@@ -164,7 +190,7 @@ def stack(t):
 
 CARDS = {
     "card-controla": ("Controla", ["Plataforma de ventas, inventario y finanzas", "para tiendas de barrio. Mi proyecto de tesis."],
-                      ["Flutter", "Node.js", "PostgreSQL", "ML"], "TESIS · PRIVADO"),
+                      ["Flutter", "NestJS", "SQL Server", "ML"], "TESIS · PRIVADO"),
     "card-itjobs": ("DataXperience · IT Jobs", ["De 2.500 ofertas de empleo a un modelo predictivo", "del mercado laboral de TI."],
                     ["Python", "pandas", "scikit-learn"], "DATA SCIENCE"),
     "card-helpdesk": ("Análisis de mesa de ayuda", ["Tickets de soporte analizados con Power Query", "y Excel potenciado con IA."],
@@ -179,5 +205,5 @@ if __name__ == "__main__":
         (OUT / f"bcr-{name}.svg").write_text(wide(t), encoding="utf-8")
         (OUT / f"stack-{name}.svg").write_text(stack(t), encoding="utf-8")
         for key, (title, desc, tags, status) in CARDS.items():
-            (OUT / f"{key}-{name}.svg").write_text(card(t, title, desc, tags, status), encoding="utf-8")
+            (OUT / f"{key}-{name}.svg").write_text((card_controla(name, title, desc, tags, status) if key == "card-controla" else card(t, title, desc, tags, status)), encoding="utf-8")
     print("ok", len(list(OUT.glob("*.svg"))), "archivos")
