@@ -26,10 +26,10 @@ FOX = ('<polygon points="14,6 40,32 16,46" fill="#12161F"/><polygon points="86,6
        '<polygon points="44,84 56,84 50,94" fill="#12161F"/>')
 
 
-def fox(x, y, size, t):
+def fox(x, y, size, t, tile=None):
     """Zorro de la marca sobre una ficha (naranja en oscuro, tinta en claro)."""
     pad = size * 0.14
-    tile = t["tile"]
+    tile = tile or t["tile"]
     ink_fix = FOX.replace('#12161F', '#12161F') if tile != '#12161F' else FOX.replace('fill="#12161F"', 'fill="#12161F" stroke="#F4EEE4" stroke-width="1.2" stroke-linejoin="round"')
     return (f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="{size * 0.22}" fill="{tile}"/>'
             f'<svg x="{x + pad}" y="{y + pad}" width="{size - 2 * pad}" height="{size - 2 * pad}" viewBox="0 0 100 100">{ink_fix}</svg>')
@@ -73,20 +73,20 @@ def hero(t):
              ".o1{animation:d1 12s ease-in-out infinite}.o2{animation:d2 14s ease-in-out infinite}"
              ".cur{animation:b 1.1s steps(1) infinite}"
              "</style>")
-    chip_svg, _ = chips(["Software engineer", "Founder · bcr.", "Bogotá, CO"], 72, 238, t, 13)
+    chip_svg, _ = chips(["Software engineer", "Founder · bcr.", "Bogotá, CO"], 72, 252, t, 13)
     return (head(w, h, t, extra) + style +
             f'<g clip-path="url(#c)"><rect width="{w}" height="{h}" fill="{t["bg"]}"/>'
             f'<rect width="{w}" height="{h}" fill="url(#dots)"/>'
             f'<g filter="url(#blur)" opacity=".38"><circle class="o1" cx="1000" cy="80" r="120" fill="{t["a1"]}"/>'
             f'<circle class="o2" cx="860" cy="280" r="90" fill="{t["a2"]}"/></g></g>'
             f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="24" fill="none" stroke="{t["border"]}"/>'
-            f'<g class="l1"><text x="72" y="82" font-family="{MONO}" font-size="16" fill="{t["acc"]}">~/nicolas-becerra</text></g>'
-            f'<g class="l2"><text x="72" y="164" font-family="{SANS}" font-size="64" font-weight="700" '
+            f'<g class="l1"><text x="180" y="92" font-family="{MONO}" font-size="16" fill="{t["acc"]}">~/nicolas-becerra</text></g>'
+            f'<g class="l2"><text x="72" y="190" font-family="{SANS}" font-size="64" font-weight="700" '
             f'letter-spacing="-2" fill="{t["text"]}">Nicolás Becerra</text>'
-            f'<rect class="cur" x="548" y="118" width="6" height="56" fill="#F26A21"/></g>'
-            f'<g class="l3"><text x="72" y="208" font-family="{SANS}" font-size="22" fill="{t["muted"]}">'
+            f'<rect class="cur" x="548" y="144" width="6" height="56" fill="#F26A21"/></g>'
+            f'<g class="l3"><text x="72" y="230" font-family="{SANS}" font-size="22" fill="{t["muted"]}">'
             f'Construyo software que resuelve problemas reales de negocios.</text>{chip_svg}</g>'
-            + fox(930, 56, 200, t) + '</svg>')
+            + fox(72, 36, 88, t, tile="#F26A21") + wordmark(1050, 298, 46, t) + '</svg>')
 
 
 def card(t, title, desc, tags, status, w=588, h=190):
