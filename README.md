@@ -1,129 +1,59 @@
-<h1 align="center"><b>Hi, I'm Nicolas Becerra </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=22EBF7&size=25&center=true&lines=Systems+Engineering+Student;Junior+Web+Developer;Ecommerce+%26+Shopify+Developer;UI%2FUX+%26+Data+Analytics;Learning+something+new+every+day" width="500" />
-</p>
-
-<div id="badges" align="center">
-  <a href="mailto:nbecerran73@gmail.com">
-    <img src="https://img.shields.io/badge/-Email%20Me-red?style=for-the-badge" alt="Email Badge"/>
-  </a>
-  <a href="https://www.linkedin.com/in/nicolas-felipe-becerra-jimenez-771a83263/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="https://github.com/nicobcra">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
-  </a>
-</div>
-<div id="profile-views" align="center">
-  <img src="https://komarev.com/ghpvc/?username=nicobcra&style=flat-square&color=blue" alt="Profile Views"/>
-</div>
-
-<br>
-<hr style="border: 0; height: 1px; background: #1b223c; margin: 0;">
-<br>
-
-<img align="left" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3VlaHlmdmJndG56bjd4NDluZTNoMDZ6bDJoamQ2Y3VjM3YwOWtzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iIqmM5tTjmpOB9mpbn/giphy.gif" width="410" height="270" />
-
-```css
-> root :~ whoami
-```
-```python
-> Junior Web Developer focused on Ecommerce 💻
-> Systems Engineering Student – 7th semester (Univ. EAN) 📚
-> Specialized in Shopify, WordPress & Tienda Nube 🛒
-> Working with HTML, CSS, JavaScript, React & Node.js 🔭
-> Handling analytics tools: SQL, Python & Power BI 📊
-> Improving my programming skills every single day 👨‍💻
-
-> Bogotá, Colombia 🇨🇴
-```
-<br>
-<hr style="border: 0; height: 1px; background: #30363d; margin: 0;">
-
-<h3 align="center">👾 My GitHub Contributions Journey</h3>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake.svg">
-  <img alt="Github snake game" src="https://raw.githubusercontent.com/nicobcra/nicobcra/output/github-contribution-grid-snake.svg">
-</picture>
-
-<br>
-<hr style="border: 0; height: 1px; background: #1b223c; margin: 0;">
-<br>
-
-<table width="100%">
-<tr>
-  <td><h3 align="center">⚡ SKILLS</h3></td>
-  <td><h3 align="center">📊 STATS</h3></td>
-</tr>
-<tr>
-  <td width="55%">
-
-#### Languages
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)&nbsp;
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)&nbsp;
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)&nbsp;
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)&nbsp;
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white)&nbsp;
-
----
-#### Frontend & Backend
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)&nbsp;
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)&nbsp;
-
----
-#### Ecommerce & CMS
-![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=flat&logo=shopify&logoColor=white)&nbsp;
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white)&nbsp;
-
----
-#### UI/UX Design
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)&nbsp;
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=flat&logo=adobexd&logoColor=FF61F6)&nbsp;
-![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=adobephotoshop&logoColor=white)&nbsp;
-
----
-#### Databases
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)&nbsp;
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)&nbsp;
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)&nbsp;
-
----
-#### Analytics & Tools
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)&nbsp;
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)&nbsp;
-![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)&nbsp;
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)&nbsp;
-![N8N](https://img.shields.io/badge/n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)&nbsp;
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)&nbsp;
-
-  </td>
-  <td>
-
-<p align="center">
-  <img height="50%" width="auto" src="https://github-readme-stats.vercel.app/api?username=nicobcra&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
-  </br></br>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=nicobcra&theme=darcula&hide_border=true&background=FFFFFF00">
-  </br></br>
-  <img height="50%" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicobcra&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=8">
-</p>
-
-  </td>
-</tr>
-</table>
-
-<br>
-<hr style="border: 0; height: 1px; background: #1b223c; margin: 0;">
-<br>
-
 <div align="center">
-  <br>
-  <p>
-    <a href="mailto:nbecerran73@gmail.com">📬 nbecerran73@gmail.com</a>
-  </p>
-  <a href="https://github.com/nicobcra" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+
+# Nicolás Becerra
+
+**Ingeniero de Sistemas (último semestre, Universidad EAN) · Desarrollador de software · Bogotá, Colombia**
+
+Fundador de **BCR** (*Build · Code · Release*): webs, automatizaciones y software a la medida.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicolas-felipe-becerra-jimenez-771a83263/)
+[![Email](https://img.shields.io/badge/Correo-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nbecerran73@gmail.com)
+
 </div>
+
+---
+
+## Sobre mí
+
+Construyo software que resuelve problemas reales de negocios pequeños y medianos: desde una app móvil para tenderos hasta análisis de datos y automatizaciones que ahorran horas de trabajo manual.
+
+- 🏪 **Controla**: mi proyecto de tesis. Plataforma de gestión de ventas, inventario y finanzas para tiendas de barrio (app Flutter, backend, servicio de ML y consola de administración).
+- 🏢 **BCR**: mi empresa de desarrollo. Webs, automatización y sistemas de gestión a la medida.
+- 📊 Análisis de datos con Python, SQL y Power BI.
+- 🎯 Busco una oportunidad para aportar en desarrollo de software, trabajando con equipos y aprendiendo en producción.
+
+## Proyectos destacados
+
+| Proyecto | Qué hace | Tecnologías |
+| :-- | :-- | :-- |
+| [**Project-DataXperience-IT_Jobs**](https://github.com/nicobcra/Project-DataXperience-IT_Jobs) | Análisis completo del mercado laboral de TI: de 2.500 ofertas a un modelo predictivo con regresión lineal y logística | `Python` `pandas` `scikit-learn` `Jupyter` |
+| [**analisis-mesa-ayuda-excel-ia**](https://github.com/nicobcra/analisis-mesa-ayuda-excel-ia) | Análisis de una mesa de ayuda con Excel y Power Query, apoyado en IA | `Power Query` `Excel` |
+| [**APIpeliculas_Swagger**](https://github.com/nicobcra/APIpeliculas_Swagger) | API REST documentada con Swagger | `C#` `.NET 10` `Swagger` |
+| [**Script-descarga-googledrive-archivos-excel**](https://github.com/nicobcra/Script-descarga-googledrive-archivos-excel) | Descarga masiva de archivos de Drive sin desalinear filas en Excel, marcando errores en rojo | `Python` `Selenium` `OpenPyXL` |
+| [**Prototipo_Controla_Python**](https://github.com/nicobcra/Prototipo_Controla_Python) | Primer prototipo del sistema de registro de ventas que luego evolucionó a Controla | `Python` `Flask` `HTML` |
+
+> El código completo de **Controla** es privado por ser parte de mi tesis. Si quieres ver una demo o conversar sobre la arquitectura, escríbeme.
+
+## Stack
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-FF6D5A?style=flat-square&logo=n8n&logoColor=white)
+
+## Contacto
+
+📬 [nbecerran73@gmail.com](mailto:nbecerran73@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/nicolas-felipe-becerra-jimenez-771a83263/)
