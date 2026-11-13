@@ -150,11 +150,39 @@ CARDS = {
                  ["C#", ".NET 10", "Swagger"], "BACKEND"),
 }
 
+def medal(t, icon, big, small):
+    w, h = 170, 200
+    shield = "M85 8 L156 32 V104 C156 146 124 176 85 192 C46 176 14 146 14 104 V32 Z"
+    if icon == "fox":
+        ic = fox(53, 36, 64, t)
+    elif icon == "code":
+        ic = (f'<circle cx="85" cy="68" r="32" fill="{t["tile"]}"/>'
+              f'<text x="85" y="76" text-anchor="middle" font-family="{MONO}" font-size="22" font-weight="700" fill="{"#F4EEE4" if t["tile"] == "#12161F" else "#12161F"}">&lt;/&gt;</text>')
+    else:
+        bolt = "M92 44 L70 74 H84 L78 98 L102 64 H88 Z"
+        ic = (f'<circle cx="85" cy="70" r="32" fill="{t["tile"]}"/>'
+              f'<path d="{bolt}" fill="{"#F4EEE4" if t["tile"] == "#12161F" else "#12161F"}"/>')
+    return (head(w, h, t) +
+            f'<path d="{shield}" fill="{t["card"]}" stroke="#F26A21" stroke-width="3" stroke-linejoin="round"/>'
+            f'<path d="{shield}" fill="none" stroke="{t["border"]}" stroke-width="1" transform="translate(85 100) scale(.9) translate(-85 -100)"/>'
+            + ic +
+            f'<text x="85" y="130" text-anchor="middle" font-family="{SANS}" font-size="17" font-weight="800" fill="{t["text"]}">{escape(big)}</text>'
+            f'<text x="85" y="150" text-anchor="middle" font-family="{MONO}" font-size="10" letter-spacing="1" fill="{t["acc"]}">{escape(small)}</text>'
+            f'<rect x="65" y="160" width="40" height="3" rx="1.5" fill="#F26A21"/></svg>')
+
+
+MEDALS = {"medal-founder": ("fox", "bcr.", "FOUNDER"),
+          "medal-fullstack": ("code", "Full-stack", "WEB · API · DATA"),
+          "medal-open": ("bolt", "Disponible", "OPEN TO WORK")}
+
+
 if __name__ == "__main__":
     for name, t in THEMES.items():
         (OUT / f"hero-{name}.svg").write_text(hero(t), encoding="utf-8")
         (OUT / f"bcr-{name}.svg").write_text(wide(t), encoding="utf-8")
         (OUT / f"stack-{name}.svg").write_text(stack(t), encoding="utf-8")
+        for key, (ic, big, small) in MEDALS.items():
+            (OUT / f"{key}-{name}.svg").write_text(medal(t, ic, big, small), encoding="utf-8")
         for key, (title, desc, tags, status) in CARDS.items():
             (OUT / f"{key}-{name}.svg").write_text(card(t, title, desc, tags, status), encoding="utf-8")
     print("ok", len(list(OUT.glob("*.svg"))), "archivos")

@@ -4,6 +4,9 @@
 
 [LinkedIn](https://www.linkedin.com/in/nicolas-felipe-becerra-jimenez-771a83263/) · [Correo](mailto:nbecerran73@gmail.com) · [bcr.](#-bcr)
 
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/medal-founder-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/medal-founder-light.svg"><img src="assets/medal-founder-dark.svg" alt="Fundador de bcr." width="130"></picture>&nbsp;&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/medal-fullstack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/medal-fullstack-light.svg"><img src="assets/medal-fullstack-dark.svg" alt="Full-stack" width="130"></picture>&nbsp;&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/medal-open-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/medal-open-light.svg"><img src="assets/medal-open-dark.svg" alt="Disponible para trabajar" width="130"></picture>
+
 </div>
 
 ## 👋 Hola
