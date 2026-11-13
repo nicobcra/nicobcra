@@ -1,4 +1,5 @@
 """Genera los SVG del perfil (versión oscura y clara). Uso: python scripts/build_assets.py"""
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -117,23 +118,45 @@ def wide(t):
             f'● Abierto a nuevos proyectos</text></svg>')
 
 
+ICONS = Path(__file__).resolve().parent / "icons"
+
 STACK = [
-    ("Frontend", ["React", "TypeScript", "JavaScript", "HTML / CSS"]),
-    ("Backend", ["Node.js", "C# / .NET", "Python", "PHP"]),
-    ("Mobile", ["Flutter / Dart"]),
-    ("Datos", ["PostgreSQL", "MySQL", "pandas", "scikit-learn", "Power BI"]),
-    ("Herramientas", ["Git", "Docker", "n8n", "Figma"]),
+    ("Frontend", [("React", "react"), ("TypeScript", "typescript"), ("JavaScript", "javascript"), ("HTML", "html5"), ("CSS", "css3")]),
+    ("Backend", [("Node.js", "nodedotjs"), (".NET", "dotnet"), ("Python", "python"), ("PHP", "php")]),
+    ("Mobile", [("Flutter", "flutter")]),
+    ("Datos", [("PostgreSQL", "postgresql"), ("MySQL", "mysql"), ("pandas", "pandas"), ("scikit-learn", "scikitlearn"), ("Power BI", "powerbi")]),
+    ("Herramientas", [("Git", "git"), ("Docker", "docker"), ("n8n", "n8n"), ("Figma", "figma")]),
 ]
 
 
+def icon_path(slug):
+    f = ICONS / f"{slug}.svg"
+    if slug == "powerbi" or not f.exists():
+        return None  # Power BI ya no está en simple-icons: se dibuja a mano
+    return re.search(r' d="([^"]+)"', f.read_text(encoding="utf-8")).group(1)
+
+
+def tile(t, x, y, label, slug):
+    d = icon_path(slug)
+    if d:
+        glyph = f'<path d="{d}" fill="{t["text"]}" transform="translate({x + 38} {y + 16}) scale(1.5)"/>'
+    else:
+        glyph = "".join(f'<rect x="{x + 40 + i * 9}" y="{y + 52 - h}" width="6" height="{h}" rx="2" fill="{t["text"]}"/>'
+                        for i, h in enumerate((14, 22, 32)))
+    return (f'<rect x="{x}" y="{y}" width="112" height="92" rx="16" fill="{t["chip"]}"/>' + glyph +
+            f'<text x="{x + 56}" y="{y + 78}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="{t["muted"]}">{escape(label)}</text>')
+
+
 def stack(t):
-    w, h = 1200, 28 + len(STACK) * 52
+    w, row = 1200, 112
+    h = 24 + len(STACK) * row
     body = ""
     for i, (label, items) in enumerate(STACK):
-        y = 38 + i * 52
-        body += (f'<text x="32" y="{y + 18}" font-family="{MONO}" font-size="13" fill="{t["muted"]}">{label}</text>')
-        c, _ = chips(items, 170, y, t, 13)
-        body += c
+        y = 22 + i * row
+        body += (f'<rect x="32" y="{y + 36}" width="18" height="3" rx="1.5" fill="#F26A21"/>'
+                 f'<text x="32" y="{y + 62}" font-family="{SANS}" font-size="17" font-weight="700" fill="{t["text"]}">{label}</text>')
+        for j, (name, slug) in enumerate(items):
+            body += tile(t, 200 + j * 124, y, name, slug)
     return (head(w, h, t) +
             f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="20" fill="{t["card"]}" stroke="{t["border"]}"/>'
             + body + "</svg>")
@@ -150,39 +173,11 @@ CARDS = {
                  ["C#", ".NET 10", "Swagger"], "BACKEND"),
 }
 
-def medal(t, icon, big, small):
-    w, h = 170, 200
-    shield = "M85 8 L156 32 V104 C156 146 124 176 85 192 C46 176 14 146 14 104 V32 Z"
-    if icon == "fox":
-        ic = fox(53, 36, 64, t)
-    elif icon == "code":
-        ic = (f'<circle cx="85" cy="68" r="32" fill="{t["tile"]}"/>'
-              f'<text x="85" y="76" text-anchor="middle" font-family="{MONO}" font-size="22" font-weight="700" fill="{"#F4EEE4" if t["tile"] == "#12161F" else "#12161F"}">&lt;/&gt;</text>')
-    else:
-        bolt = "M92 44 L70 74 H84 L78 98 L102 64 H88 Z"
-        ic = (f'<circle cx="85" cy="70" r="32" fill="{t["tile"]}"/>'
-              f'<path d="{bolt}" fill="{"#F4EEE4" if t["tile"] == "#12161F" else "#12161F"}"/>')
-    return (head(w, h, t) +
-            f'<path d="{shield}" fill="{t["card"]}" stroke="#F26A21" stroke-width="3" stroke-linejoin="round"/>'
-            f'<path d="{shield}" fill="none" stroke="{t["border"]}" stroke-width="1" transform="translate(85 100) scale(.9) translate(-85 -100)"/>'
-            + ic +
-            f'<text x="85" y="130" text-anchor="middle" font-family="{SANS}" font-size="17" font-weight="800" fill="{t["text"]}">{escape(big)}</text>'
-            f'<text x="85" y="150" text-anchor="middle" font-family="{MONO}" font-size="10" letter-spacing="1" fill="{t["acc"]}">{escape(small)}</text>'
-            f'<rect x="65" y="160" width="40" height="3" rx="1.5" fill="#F26A21"/></svg>')
-
-
-MEDALS = {"medal-founder": ("fox", "bcr.", "FOUNDER"),
-          "medal-fullstack": ("code", "Full-stack", "WEB · API · DATA"),
-          "medal-open": ("bolt", "Disponible", "OPEN TO WORK")}
-
-
 if __name__ == "__main__":
     for name, t in THEMES.items():
         (OUT / f"hero-{name}.svg").write_text(hero(t), encoding="utf-8")
         (OUT / f"bcr-{name}.svg").write_text(wide(t), encoding="utf-8")
         (OUT / f"stack-{name}.svg").write_text(stack(t), encoding="utf-8")
-        for key, (ic, big, small) in MEDALS.items():
-            (OUT / f"{key}-{name}.svg").write_text(medal(t, ic, big, small), encoding="utf-8")
         for key, (title, desc, tags, status) in CARDS.items():
             (OUT / f"{key}-{name}.svg").write_text(card(t, title, desc, tags, status), encoding="utf-8")
     print("ok", len(list(OUT.glob("*.svg"))), "archivos")

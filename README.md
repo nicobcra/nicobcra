@@ -5,13 +5,16 @@
 [LinkedIn](https://www.linkedin.com/in/nicolas-felipe-becerra-jimenez-771a83263/) · [Correo](mailto:nbecerran73@gmail.com) · [bcr.](#-bcr)
 
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/medal-founder-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/medal-founder-light.svg"><img src="assets/medal-founder-dark.svg" alt="Fundador de bcr." width="130"></picture>&nbsp;&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/medal-fullstack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/medal-fullstack-light.svg"><img src="assets/medal-fullstack-dark.svg" alt="Full-stack" width="130"></picture>&nbsp;&nbsp;<picture><source media="(prefers-color-scheme: dark)" srcset="assets/medal-open-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/medal-open-light.svg"><img src="assets/medal-open-dark.svg" alt="Disponible para trabajar" width="130"></picture>
 
 </div>
 
 ## 👋 Hola
 
-Soy ingeniero de sistemas en último semestre (Universidad EAN, Bogotá). Diseño y construyo software para negocios reales: apps, APIs, análisis de datos y automatizaciones. Mi proyecto de tesis, **Controla**, es una plataforma para tiendas de barrio; y con **bcr.** llevo ese mismo enfoque a clientes.
+Soy ingeniero de sistemas en último semestre (Universidad EAN, Bogotá) y fundador de **bcr.**, mi estudio de software. Construyo webs, automatizaciones y sistemas a la medida para negocios que hoy dependen de procesos manuales, con foco en que el software sea claro, sólido y que de verdad se use.
+
+- 🏪 **Controla**: mi proyecto de tesis. Una plataforma de ventas, inventario y finanzas para tiendas de barrio, con app móvil, backend y un servicio de machine learning.
+- 🛒 Vengo del mundo ecommerce (Shopify, WordPress) y del análisis de datos (Python, SQL, Power BI), así que conecto el lado técnico con el del negocio.
+- 🎯 Busco un equipo donde aportar con evidencia de trabajo real, aprender rápido y entregar.
 
 ## 🚀 Proyectos
 
