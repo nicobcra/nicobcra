@@ -19,14 +19,14 @@ Busco sumarme a un equipo de desarrollo donde pueda aportar desde el primer día
 ## Proyectos
 
 <table><tr>
-<td><a href="https://github.com/nicobcra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-controla-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-controla-light.svg"><img src="assets/card-controla-dark.svg" alt="Controla" width="100%"></picture></a></td>
+<td><a href="https://github.com/nicobcra/controla-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-controla-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-controla-light.svg"><img src="assets/card-controla-dark.svg" alt="Controla" width="100%"></picture></a></td>
 <td><a href="https://github.com/nicobcra/Project-DataXperience-IT_Jobs"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-itjobs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-itjobs-light.svg"><img src="assets/card-itjobs-dark.svg" alt="IT Jobs" width="100%"></picture></a></td>
 </tr><tr>
 <td><a href="https://github.com/nicobcra/analisis-mesa-ayuda-excel-ia"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-helpdesk-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-helpdesk-light.svg"><img src="assets/card-helpdesk-dark.svg" alt="Mesa de ayuda" width="100%"></picture></a></td>
 <td><a href="https://github.com/nicobcra/APIpeliculas_Swagger"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-api-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-api-light.svg"><img src="assets/card-api-dark.svg" alt="API" width="100%"></picture></a></td>
 </tr></table>
 
-> El código de **Controla** es privado (es parte de mi tesis). Escríbeme si quieres ver una demo.
+> El código de **Controla** es privado (es parte de mi tesis). La arquitectura, las decisiones técnicas y las pantallas están en [controla-showcase](https://github.com/nicobcra/controla-showcase). Escríbeme si quieres ver una demo.
 
 ## bcr.
 
