@@ -8,12 +8,37 @@ OUT.mkdir(exist_ok=True)
 SANS = "'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif"
 MONO = "'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
 
+# Paleta oficial de bcr.: Ink #12161F · Ember #F26A21 · Cream #F4EEE4 · Slate #8A93A6
 THEMES = {
-    "dark": dict(bg="#0A0E17", card="#111826", border="#1F2A3D", text="#E8EDF5",
-                 muted="#8A97AD", a1="#8B7CFF", a2="#2DD4BF", chip="#1A2335", dot="#1B2438"),
-    "light": dict(bg="#FFFFFF", card="#F6F8FB", border="#DDE3EE", text="#0F172A",
-                  muted="#5B6779", a1="#5B45E6", a2="#0D9488", chip="#E9EDF5", dot="#E3E8F1"),
+    "dark": dict(bg="#12161F", card="#1A2030", border="#2B3345", text="#F4EEE4",
+                 muted="#8A93A6", a1="#F26A21", a2="#FF9A5A", acc="#F26A21", chip="#232B3D", dot="#1F2637",
+                 tile="#F26A21", fox_ink="#12161F"),
+    "light": dict(bg="#F4EEE4", card="#FBF8F2", border="#E0D6C6", text="#12161F",
+                  muted="#5E6676", a1="#F26A21", a2="#E4560F", acc="#C9500F", chip="#EBE3D5", dot="#E3D9C8",
+                  tile="#12161F", fox_ink="#12161F"),
 }
+
+FOX = ('<polygon points="14,6 40,32 16,46" fill="#12161F"/><polygon points="86,6 60,32 84,46" fill="#12161F"/>'
+       '<polygon points="10,32 90,32 50,94" fill="#F4EEE4"/>'
+       '<polygon points="10,32 90,32 74,56 50,70 26,56" fill="#12161F"/>'
+       '<circle cx="36" cy="46" r="4.5" fill="#F26A21"/><circle cx="64" cy="46" r="4.5" fill="#F26A21"/>'
+       '<polygon points="44,84 56,84 50,94" fill="#12161F"/>')
+
+
+def fox(x, y, size, t):
+    """Zorro de la marca sobre una ficha (naranja en oscuro, tinta en claro)."""
+    pad = size * 0.14
+    tile = t["tile"]
+    ink_fix = FOX.replace('#12161F', '#12161F') if tile != '#12161F' else FOX.replace('fill="#12161F"', 'fill="#12161F" stroke="#F4EEE4" stroke-width="1.2" stroke-linejoin="round"')
+    return (f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="{size * 0.22}" fill="{tile}"/>'
+            f'<svg x="{x + pad}" y="{y + pad}" width="{size - 2 * pad}" height="{size - 2 * pad}" viewBox="0 0 100 100">{ink_fix}</svg>')
+
+
+def wordmark(x, y, size, t):
+    """bcr + punto naranja redondeado, como el logo."""
+    return (f'<text x="{x}" y="{y}" font-family="{SANS}" font-size="{size}" font-weight="900" letter-spacing="-{size * 0.06}" '
+            f'fill="{t["text"]}">bcr</text>'
+            f'<rect x="{x + size * 1.52}" y="{y - size * 0.2}" width="{size * 0.2}" height="{size * 0.2}" rx="{size * 0.06}" fill="#F26A21"/>')
 
 
 def head(w, h, t, extra=""):
@@ -51,17 +76,16 @@ def hero(t):
     return (head(w, h, t, extra) + style +
             f'<g clip-path="url(#c)"><rect width="{w}" height="{h}" fill="{t["bg"]}"/>'
             f'<rect width="{w}" height="{h}" fill="url(#dots)"/>'
-            f'<g filter="url(#blur)" opacity=".55"><circle class="o1" cx="980" cy="90" r="120" fill="{t["a1"]}"/>'
-            f'<circle class="o2" cx="1080" cy="260" r="100" fill="{t["a2"]}"/></g></g>'
+            f'<g filter="url(#blur)" opacity=".38"><circle class="o1" cx="1000" cy="80" r="120" fill="{t["a1"]}"/>'
+            f'<circle class="o2" cx="860" cy="280" r="90" fill="{t["a2"]}"/></g></g>'
             f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="24" fill="none" stroke="{t["border"]}"/>'
-            f'<g class="l1"><text x="72" y="82" font-family="{MONO}" font-size="16" fill="{t["a2"]}">~/nicolas-becerra</text></g>'
+            f'<g class="l1"><text x="72" y="82" font-family="{MONO}" font-size="16" fill="{t["acc"]}">~/nicolas-becerra</text></g>'
             f'<g class="l2"><text x="72" y="164" font-family="{SANS}" font-size="64" font-weight="700" '
             f'letter-spacing="-2" fill="{t["text"]}">Nicolás Becerra</text>'
-            f'<rect class="cur" x="548" y="118" width="6" height="56" fill="url(#g)"/></g>'
+            f'<rect class="cur" x="548" y="118" width="6" height="56" fill="#F26A21"/></g>'
             f'<g class="l3"><text x="72" y="208" font-family="{SANS}" font-size="22" fill="{t["muted"]}">'
             f'Construyo software que resuelve problemas reales de negocios.</text>{chip_svg}</g>'
-            f'<text x="1128" y="298" text-anchor="end" font-family="{SANS}" font-size="34" font-weight="800" '
-            f'fill="url(#g)">bcr.</text></svg>')
+            + fox(930, 56, 200, t) + '</svg>')
 
 
 def card(t, title, desc, tags, status, w=588, h=190):
@@ -85,11 +109,11 @@ def wide(t):
     chip_svg, _ = chips(["Webs", "Automatización", "Software a la medida"], 32, 90, t, 13)
     return (head(w, h, t) +
             f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="20" fill="{t["card"]}" stroke="{t["border"]}"/>'
-            f'<rect x="1" y="1" width="6" height="{h - 2}" rx="3" fill="url(#g)"/>'
-            f'<text x="32" y="56" font-family="{SANS}" font-size="28" font-weight="800" fill="url(#g)">bcr.</text>'
-            f'<text x="110" y="56" font-family="{SANS}" font-size="18" fill="{t["text"]}">'
+            f'<rect x="1" y="1" width="6" height="{h - 2}" rx="3" fill="url(#g)"/>' +
+            wordmark(32, 62, 40, t) +
+            f'<text x="150" y="56" font-family="{SANS}" font-size="18" fill="{t["text"]}">'
             f'Build · Code · Release. Mi estudio de software.</text>{chip_svg}'
-            f'<text x="{w - 32}" y="56" text-anchor="end" font-family="{MONO}" font-size="13" fill="{t["a2"]}">'
+            f'<text x="{w - 32}" y="56" text-anchor="end" font-family="{MONO}" font-size="13" fill="{t["acc"]}">'
             f'● Abierto a nuevos proyectos</text></svg>')
 
 
